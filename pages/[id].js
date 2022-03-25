@@ -37,7 +37,7 @@ const ChannelViewPage = () => {
             setIsLoading(false);
             setChannelData({ id, ...data });
         })
-    }, [user]);
+    }, [user, id]);
 
     if (status === "loading" || isLoading) {
         return <LoadingComponent />

@@ -24,7 +24,7 @@ const ChannelList = ({ user }) => {
             })
             setChannels(updatedChannels);
         });
-    }, []);
+    }, [user.email]);
 
     return (
         <StyledChannelList>

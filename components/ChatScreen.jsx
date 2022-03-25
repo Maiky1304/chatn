@@ -64,7 +64,7 @@ const ChatScreen = ({ user, channel }) => {
                 )}
             </StyledChatTopBar>
             <StyledChatMessageContainer>
-                {channel?.messages?.map(data => <ChatMessage message={data} />)}
+                {channel?.messages?.map(data => <ChatMessage key="beta" message={data} />)}
             </StyledChatMessageContainer>
             <StyledChatMessageInputContainer onSubmit={formSubmit}>
                 <StyledChatMessageInput
